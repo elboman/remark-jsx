@@ -1,0 +1,27 @@
+{
+  "name": "remark-jsx",
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "mdast-util-to-hast": "^3.0.0",
+    "remark-parse": "^5.0.0",
+    "unist-util-map": "^1.0.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.39",
+    "@babel/core": "^7.0.0-beta.39",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.39",
+    "@babel/preset-env": "^7.0.0-beta.39",
+    "jest": "^22.1.4",
+    "prettier": "^1.10.2",
+    "shx": "^0.2.2",
+    "unified": "^6.1.6"
+  },
+  "scripts": {
+    "test": "jest --watchAll",
+    "clean": "shx rm -rf lib",
+    "compile": "babel src --out-dir lib --ignore '**/__tests__/**'",
+    "build": "yarn clean && yarn compile"
+  }
+}
