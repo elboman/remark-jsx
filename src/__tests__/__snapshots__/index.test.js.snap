@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`remark-jsx plugin should work correctly 1`] = `
+Object {
+  "children": Array [
+    Object {
+      "children": Array [
+        Object {
+          "type": "text",
+          "value": "This is markdown",
+        },
+      ],
+      "properties": Object {},
+      "tagName": "h1",
+      "type": "element",
+    },
+    Object {
+      "children": Array [],
+      "properties": Object {},
+      "tagName": "SomeComponent",
+      "type": "element",
+    },
+  ],
+  "type": "root",
+}
+`;
