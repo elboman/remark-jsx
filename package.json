@@ -1,5 +1,5 @@
 {
-  "name": "remark-jsx",
+  "name": "@elboman/remark-jsx",
   "version": "0.1.0",
   "main": "lib/index.js",
   "license": "MIT",
@@ -22,6 +22,7 @@
     "test": "jest --watchAll",
     "clean": "shx rm -rf lib",
     "compile": "babel src --out-dir lib --ignore '**/__tests__/**'",
-    "build": "yarn clean && yarn compile"
+    "build": "yarn clean && yarn compile",
+    "prepublishOnly": "npm run build"
   }
 }
